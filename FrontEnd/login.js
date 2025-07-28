@@ -21,7 +21,7 @@ form.addEventListener("submit",async (event) => {
       }); 
      
         
-      //si la réponse est positive(statut 200)
+      //si la réponse est positive
          if(response.ok) {
           const data =await response.json();//récuperer les données de la réponse
           console.log(data);
