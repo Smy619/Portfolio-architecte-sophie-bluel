@@ -6,9 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
-	<meta name="description" content="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
+	<script type="module" src="./js/main.js"></script>
+
 </head>
 <body>
 <header>
@@ -17,7 +19,8 @@
 		<ul>
 			<li>projets</li>
 			<li>contact</li>
-			<li>login</li>
+			<li>
+			 <a href ="login.html">login</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -35,8 +38,71 @@
 		</article>
 	</section>
 	<section id="portfolio">
+		<div class="no-wrap">
 		<h2>Mes Projets</h2>
-		<div class="gallery">
+		<a href ="#" class="modifier-button" style="display:none;">
+			<i class="fa-regular fa-pen-to-square"></i>modifier</a>
+    </div>
+
+  <!--ajouter de la fenêtre modale-->
+  <div class="modal hidden">
+		<div class="modal-content">
+			<button class="modal-close">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
+      
+    
+		 <!--galerie photo-->
+			<div id="modal-gallery-view" class="modal-view active">
+				<h3>Galerie photo</h3>
+				<div id="media-thumbnails"><!--js--></div>
+				<div class="separator"></div>
+				<button id="open-add-photo" class="add-photo-btn">Ajouter une photo</button>
+			</div>
+   
+			
+			 <!--ajouter photo-->
+			  <div id="modal-add-photo-view" class="modal-view" >
+					
+            <button id="return-to-gallery" class="return-btn" aria-label="Retour à la galerie">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+						<h3>Ajout photo</h3>
+				
+           <div class="upload-infos">
+						 <div id="previewZone">
+							<i class="fa-solid fa-image"></i>
+              <label for="photo-file" class="upload-btn">+ Ajouter photo</label>
+							<p>jpg.png : 4mo max</p>
+							</div>
+							<input type="file" id="photo-file" accept="image/png, image/jpeg" style="display: none;">
+			     </div>
+
+						<form id="photo-upload-form" class="form" required>
+						  <label for="photo-title">Titre</label>
+              <input type="text" id="photo-title" name="title" required>
+							<label for="photo-category">Catégorie</label><br>
+								<div class="select-wrapper">
+										<select id ="photo-category" name="category" required>
+											<option value=""></option>
+											<option value="1">Objets</option>
+											<option value="2">Appartement</option>
+											<option value="3">Hôtel & restaurants</option>
+										</select><br>
+								</div>
+								<div class="separator"></div>
+							<button type="submit" id="photo-submit" class="valider-btn" disabled>Valider</button>
+						</form>
+				 </div>
+    </div>
+  </div>
+	 
+		<!--categories-->
+		<div class="categories">
+		</div>
+
+		
+    <div class="gallery">
 			<figure>
 				<img src="assets/images/abajour-tahina.png" alt="Abajour Tahina">
 				<figcaption>Abajour Tahina</figcaption>
@@ -93,7 +159,7 @@
 			<input type="email" name="email" id="email">
 			<label for="message">Message</label>
 			<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			<input type="submit" value="Envoyer">
+			<input type="submit" value ="Envoyer">
 		</form>
 	</section>
 </main>
