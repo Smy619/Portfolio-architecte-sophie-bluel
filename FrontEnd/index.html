@@ -44,59 +44,71 @@
 			<i class="fa-regular fa-pen-to-square"></i>modifier</a>
     </div>
 
-  <!--ajouter de la fenêtre modale-->
-  <div class="modal hidden">
-		<div class="modal-content">
-			<button class="modal-close">
-				<i class="fa-solid fa-xmark"></i>
-			</button>
-      
-    
-		 <!--galerie photo-->
-			<div id="modal-gallery-view" class="modal-view active">
-				<h3>Galerie photo</h3>
-				<div id="media-thumbnails"><!--js--></div>
-				<div class="separator"></div>
-				<button id="open-add-photo" class="add-photo-btn">Ajouter une photo</button>
-			</div>
-   
-			
-			 <!--ajouter photo-->
-			  <div id="modal-add-photo-view" class="modal-view" >
-					
-            <button id="return-to-gallery" class="return-btn" aria-label="Retour à la galerie">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-						<h3>Ajout photo</h3>
-				
-           <div class="upload-infos">
-						 <div id="previewZone">
-							<i class="fa-solid fa-image"></i>
-              <label for="photo-file" class="upload-btn">+ Ajouter photo</label>
-							<p>jpg.png : 4mo max</p>
-							</div>
-							<input type="file" id="photo-file" accept="image/png, image/jpeg" style="display: none;">
-			     </div>
+  <!-- Modal principale -->
+<div class="modal hidden">
+  <div class="modal-content">
 
-						<form id="photo-upload-form" class="form" required>
-						  <label for="photo-title">Titre</label>
-              <input type="text" id="photo-title" name="title" required>
-							<label for="photo-category">Catégorie</label><br>
-								<div class="select-wrapper">
-										<select id ="photo-category" name="category" required>
-											<option value=""></option>
-											<option value="1">Objets</option>
-											<option value="2">Appartement</option>
-											<option value="3">Hôtel & restaurants</option>
-										</select><br>
-								</div>
-								<div class="separator"></div>
-							<button type="submit" id="photo-submit" class="valider-btn" disabled>Valider</button>
-						</form>
-				 </div>
+    <!-- Bouton de fermeture -->
+    <button class="modal-close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- ===== Galerie photo ===== -->
+    <div id="modal-gallery-view" class="modal-view active">
+      <h3>Galerie photo</h3>
+
+      <!-- Miniatures chargées dynamiquement -->
+      <div id="media-thumbnails"><!-- JS injecte ici --></div>
+
+      <div class="separator"></div>
+
+      <!-- Bouton pour ouvrir la vue d’ajout -->
+      <button id="open-add-photo" class="add-photo-btn">Ajouter une photo</button>
     </div>
+
+    <!-- ===== Ajout photo ===== -->
+    <div id="modal-add-photo-view" class="modal-view">
+      
+      <!-- Retour à la galerie -->
+      <button id="return-to-gallery" class="return-btn" aria-label="Retour à la galerie">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <h3>Ajout photo</h3>
+
+      <!-- Zone d’upload -->
+      <div class="upload-infos">
+        <div id="previewZone">
+          <i class="fa-solid fa-image"></i>
+          <label for="photo-file" class="upload-btn">+ Ajouter photo</label>
+          <p>jpg, png : 4Mo max</p>
+        </div>
+        <input type="file" id="photo-file" accept="image/png, image/jpeg" style="display: none;">
+      </div>
+
+      <!-- Formulaire d'ajout -->
+      <form id="photo-upload-form" class="form" required>
+        <label for="photo-title">Titre</label>
+        <input type="text" id="photo-title" name="title" required>
+
+        <label for="photo-category">Catégorie</label>
+        <div class="select-wrapper">
+          <select id="photo-category" name="category" required>
+            <option value=""></option>
+            <option value="1">Objets</option>
+            <option value="2">Appartement</option>
+            <option value="3">Hôtel & restaurants</option>
+          </select>
+        </div>
+
+        <div class="separator"></div>
+        <button type="submit" id="photo-submit" class="valider-btn" disabled>Valider</button>
+      </form>
+    </div>
+
   </div>
-	 
+</div>
+
 		<!--categories-->
 		<div class="categories">
 		</div>
