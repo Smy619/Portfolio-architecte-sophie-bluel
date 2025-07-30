@@ -53,8 +53,8 @@ On the index.html page, in the Contact section, the "Envoyer" button does not re
 
 
 # Deployment
-The project is also live on GitHub Pages:
-➡️ https://smy619.github.io/Portfolio-architecte-sophie-bluel
+The project is live on Netlify: https://portfolio-architecte-sophie-bluel.netlify.app/
+
 
 
 # Author
