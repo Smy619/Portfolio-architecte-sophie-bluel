@@ -31,7 +31,7 @@ export function displayAdminBanner(){
   const token =localStorage.getItem("token");
 
   if (token) {
-    banner.style.display = "block";
+    banner.style.display = "flex";
   }else {
     banner.style.display = "none";
   }

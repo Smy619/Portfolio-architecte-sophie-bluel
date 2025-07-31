@@ -61,7 +61,7 @@ body {
 	height: 59px;
   background-color: rgba(0, 0, 0, 1);
   color: white;
-  display:flex;
+  
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
@@ -70,12 +70,10 @@ body {
 	font-size: 16px;
 }
 .banner-content{
-	display:flex;
 	justify-content: center;
 	align-items: center;
-	gap: 8px; 
+	gap:20px; 
 	line-height: 1;
-	padding-top: 20px;
 }
 
 header {

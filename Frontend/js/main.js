@@ -1,7 +1,15 @@
 import { getWorks } from "./api.js";
 import { afficherTravaux } from "./gallery.js";
-import {setupCategoryButtons,hideCategoryButtons,showCategoryButtons,} from "./category.js";
-import { isUserLoggedIn,setupLoginButton,displayAdminBanner,} from "./auth.js";
+import {
+  setupCategoryButtons,
+  hideCategoryButtons,
+  showCategoryButtons,
+} from "./category.js";
+import {
+  isUserLoggedIn,
+  setupLoginButton,
+  displayAdminBanner,
+} from "./auth.js";
 import { setupModal } from "./modal.js";
 import "./upload.js";
 import { setupNavActive } from "./nav.js";
