@@ -12,28 +12,21 @@ header {
 }
 
 
-h1{
+h1 {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Syne';
 	font-size: 22px;
 	font-weight: 800;
-	color: #B1663C
+	color: #B1663C;
 }
 
 h1 > span {
 	font-family: 'Work Sans';
-	font-size:10px;
+	font-size: 10px;
 	letter-spacing: 0.1em;
-
 }
 
-h2{
-	font-family: 'Syne';
-	font-weight: 700;
-	font-size: 30px;
-	color: #1D6154
-}
 nav ul {
 	display: flex;
 	align-items: center;
@@ -47,19 +40,21 @@ nav li {
 }
 
 li:hover {
-color: rgba(0, 0, 0, 1);
-text-decoration: none;
-}
-
-nav a {
-	 color:rgba(0, 0, 0, 1);
-	 text-decoration:none;
-}
-nav a:hover{
 	color: rgba(0, 0, 0, 1);
-	font-weight:bold;
 	text-decoration: none;
 }
+
+.nav-link {
+	color: rgba(0, 0, 0, 1);
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.nav-link.active {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 1);
+} 
+
 .login {
 	  width:379px;
 		margin: auto;
