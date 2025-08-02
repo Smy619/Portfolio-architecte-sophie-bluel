@@ -10,6 +10,7 @@ import {
   setupLoginButton,
   displayAdminBanner,
 } from "./auth.js";
+
 import { setupModal } from "./modal.js";
 import "./upload.js";
 import { setupNavActive } from "./nav.js";

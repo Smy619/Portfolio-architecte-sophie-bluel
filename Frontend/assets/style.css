@@ -118,12 +118,13 @@ li:hover {
 	text-decoration: none;
 }
 
-nav a {
+.nav-link{
 	color: rgba(0, 0, 0, 1);
 	text-decoration: none;
+	font-weight: normal;
 }
 
-nav a:hover {
+.nav-link:hover {
 	color: rgba(0, 0, 0, 1);
 	font-weight: bold;
 	text-decoration: none;

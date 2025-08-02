@@ -39,15 +39,13 @@ nav li {
 	text-decoration: none;
 }
 
-li:hover {
-	color: rgba(0, 0, 0, 1);
-	text-decoration: none;
-}
-
 .nav-link {
 	color: rgba(0, 0, 0, 1);
 	text-decoration: none;
-	font-weight: 400;
+	
+}
+.nav-link:hover {
+  font-weight: bold;
 }
 
 .nav-link.active {
