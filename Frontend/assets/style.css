@@ -105,8 +105,13 @@ nav ul {
 	display: flex;
 	align-items: center;
 	list-style-type: none;
+	text-decoration: none;
 }
 
+nav a {
+	color:black;
+	text-decoration: none;
+}
 nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
@@ -143,7 +148,7 @@ li:hover {
 	font-style: normal;
 	font-size: 30px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	color: rgba(29, 97, 84, 1);
 	padding-bottom: 50px;
@@ -154,10 +159,10 @@ li:hover {
 .password {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 500;
-	font-style: Medium;
+	font-style: normal;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 }
 
 input {
@@ -182,7 +187,7 @@ input {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	border: none;
 	margin-left: 100px;
@@ -193,10 +198,10 @@ input {
 .oublie {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 500;
-	font-style: Medium;
+	font-style: normal;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-decoration: underline;
 	text-decoration-style: solid;
 	text-decoration-thickness: 0%;
@@ -287,7 +292,7 @@ input {
 	font-style: normal;
 	font-size: 16px;
 	line-height: 1.2;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	color: rgba(29, 97, 84, 1);
 	border: 1px solid rgba(29, 97, 84, 1);
@@ -302,7 +307,7 @@ input {
 	align-items: center;
 	justify-content: center;
 }
-.categories button:not(.active) :hover {
+.categories button:not(.active):hover {
 	background-color:rgba(29, 97, 84, 1);
 	color:white;
 }
@@ -319,7 +324,7 @@ input {
 .modal {
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
 	opacity: 1;
 	position: fixed;
 	top: 0;
@@ -336,19 +341,20 @@ input {
 
 .modal-content {
 	background-color: white;
-	padding: 30px;
-	border-radius: 10px;
-	width: 630px;
-	height: 70vh;
+	padding: 40px 60px;
+	width: 520px;
+	height:62vh;
 	overflow-y: auto;
 	position: relative;
 	z-index: 1001;
+	border-radius: 10px;
 }
 
 .modal-view {
 	display: none;
 	width: 100%;
 	height: auto;
+	border-radius: 10px;
 }
 
 .modal-view.active {
@@ -358,11 +364,14 @@ input {
 .modal-content h3 {
 	font-family: normal;
 	font-weight: 400;
-	font-style: Regular;
+	font-style: normal;
 	font-size: 26px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
+	padding-top: 10px;;
+	padding-bottom: 15px;
+
 }
 
 .modal-close {
@@ -378,22 +387,23 @@ input {
 
 #media-thumbnails {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-	gap: 15px;
-	margin: 30px auto;
+	grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  margin: 30px auto;
+  padding-left: 40px;
+	padding-right: 40px;
 }
 
 #media-thumbnails img {
-	width: 100%;
-	height: 140px;
+	width: 80px;
+	height: auto;
 	object-fit: cover;
-	border-radius: 4px;
+	padding-bottom: 30px;
 }
 
 .delete-btn {
 	position: absolute;
 	top: 5px;
-	right: 5px;
+	right: 12px;
 	background-color: black;
 	border: none;
 	padding: 4px;
@@ -423,7 +433,7 @@ input {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 }
 
@@ -469,7 +479,7 @@ input {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	color: rgba(48, 102, 133, 1);
 	display: flex;
@@ -481,10 +491,10 @@ input {
 .upload-infos p {
 	font-family: normal;
 	font-weight: 50;
-	font-style: Regular;
+	font-style: normal;
 	font-size: 10px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	color: rgba(68, 68, 68, 1);
 }
@@ -504,7 +514,7 @@ input {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	color: rgba(61, 61, 61, 1);
 }
 
@@ -563,7 +573,7 @@ input {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	color: rgba(255, 255, 255, 1);
 	cursor: pointer;
@@ -603,10 +613,10 @@ input {
 	margin-bottom: 20px;
 	font-family: Syne;
 	font-weight: 700;
-	font-style: Bold;
+	font-style: normal;
 	font-size: 30px;
   line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
   color: rgba(29, 97, 84, 1);
 }
@@ -614,10 +624,10 @@ input {
 #contact p{
 	font-family: normal;
 	font-weight: 400;
-	font-style: Regular;
+	font-style:normal;
 	font-size: 16px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	color: rgba(61, 61, 61, 1);
 }

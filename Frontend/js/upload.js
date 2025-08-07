@@ -3,11 +3,11 @@ import { afficherTravaux, afficherGalerieModal } from "./gallery.js";
 
 // Récupération des éléments HTML nécessaires pour le formulaire d'upload
 const fileInput = document.getElementById("photo-file"); // Input pour sélectionner le fichier
-const previewZone = document.getElementById("previewZone"); // Zone de prévisualisation de l'image
 const titleInput = document.getElementById("photo-title"); // Input pour le titre de l'œuvre
 const categorySelect = document.getElementById("photo-category"); // Select pour choisir la catégorie
-const submitBtn = document.getElementById("photo-submit"); // Bouton de soumission du formulaire
-const form = document.getElementById("photo-upload-form"); // Formulaire complet
+export const previewZone = document.getElementById("previewZone"); // Zone de prévisualisation de l'image
+export const submitBtn = document.getElementById("photo-submit"); // Bouton de soumission du formulaire
+export const form = document.getElementById("photo-upload-form"); // Formulaire complet
 
 //Écouteur d'événement pour détecter quand un fichier est sélectionné
 fileInput.addEventListener("change", () => {
@@ -102,7 +102,7 @@ document
   .addEventListener("click", switchToGalleryView); // Bouton pour retourner à la galerie
 
 // Remet la zone de prévisualisation dans son état initial
-function resetPreviewZone() {
+export function resetPreviewZone() {
   previewZone.innerHTML = `
     <i class="fa-solid fa-image"></i>
     <label for="photo-file" class="upload-btn">+ Ajouter photo</label>

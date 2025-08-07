@@ -33,6 +33,7 @@ export function setupCategoryButtons(works) {
   const allButton = document.createElement("button");
   allButton.textContent = "Tous";
   allButton.id = "all";
+  allButton.classList.add("active");
 
   allButton.addEventListener("click", () => {
     afficherTravaux(works);

@@ -1,3 +1,5 @@
+import { deleteWork, getWorks } from "./api.js";
+
 //Fonction pour afficher dynamiquement les travaux dans la galerie
 export function afficherTravaux(works) {
   const gallery = document.querySelector(".gallery");
@@ -21,14 +23,12 @@ export function afficherTravaux(works) {
   });
 }
 
-import { deleteWork, getWorks } from "./api.js";
-
 export function afficherGalerieModal(works) {
   const container = document.getElementById("media-thumbnails");
   container.innerHTML = "";
 
   //Créer du bouton supprimer si administrateur
-  const isAdmin = localStorage.getItem("token"); //simple vérification
+  const isLogged = localStorage.getItem("token"); //simple vérification
 
   works.forEach((work) => {
     const figure = document.createElement("figure");
@@ -38,7 +38,7 @@ export function afficherGalerieModal(works) {
     image.src = work.imageUrl;
     image.alt = work.title;
 
-    if (isAdmin) {
+    if (isLogged) {
       const deleteBtn = document.createElement("button");
       deleteBtn.classList.add("delete-btn");
       deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';

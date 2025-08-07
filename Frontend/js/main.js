@@ -3,7 +3,6 @@ import { afficherTravaux } from "./gallery.js";
 import {
   setupCategoryButtons,
   hideCategoryButtons,
-  showCategoryButtons,
 } from "./category.js";
 import {
   isUserLoggedIn,
@@ -13,7 +12,6 @@ import {
 
 import { setupModal } from "./modal.js";
 import "./upload.js";
-import { setupNavActive } from "./nav.js";
 
 //Charger les données au lancement
 (async () => {
@@ -22,7 +20,6 @@ import { setupNavActive } from "./nav.js";
 
   setupLoginButton();
   displayAdminBanner();
-  setupNavActive();
 
   if (isUserLoggedIn()) {
     hideCategoryButtons();

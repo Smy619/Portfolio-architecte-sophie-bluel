@@ -16,7 +16,7 @@ export function setupLoginButton() {
       e.preventDefault();
       localStorage.removeItem("token");
       localStorage.removeItem("userId");
-      window.location.reload();
+      window.location.href="index.html";
     });
   }else {
      loginLink.textContent ="login";

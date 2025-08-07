@@ -64,7 +64,7 @@ nav li {
   font-style: normal;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   color:rgba(29, 97, 84, 1);
 	padding-bottom: 20px;
@@ -77,7 +77,7 @@ nav li {
   font-style: normal;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
   input {
@@ -102,7 +102,7 @@ nav li {
   font-style: normal;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
 	border:none;
 	display:block;
@@ -111,10 +111,10 @@ nav li {
   .oublie{
 	font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 0%;
