@@ -257,7 +257,9 @@ input {
 	margin: auto;
 	flex-wrap: wrap;
 }
-
+.filtres {
+  display: none;
+}
 .categories button {
 	font-family: Syne;
 	font-weight: 700;
